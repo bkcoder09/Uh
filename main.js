@@ -3,17 +3,17 @@ function bedroom(){
 }
 
 function familyroom(){
-    window.location="bedroom.html";
+    window.location="familyroom.html";
 }
 
 function desk(){
-    window.location="bedroom.html";
+    window.location="desk.html";
 }
 
 function pet(){
-    window.location="bedroom.html";
+    window.location="pet.html";
 }
 
 function dining_room(){
-    window.location="bedroom.html";
+    window.location="dining.html";
 }

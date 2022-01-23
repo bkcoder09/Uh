@@ -1,9 +1,9 @@
-my_room = "";
+my_pet = "";
 status = "";
 objects = [];
 
 function preload(){
-    my_room = loadImage('Bedroom.jpg');
+    my_pet = loadImage('Fluffy.jpg');
 }
 
 function setup(){
@@ -18,7 +18,7 @@ function setup(){
 function modelLoaded(){
     console.log("Model is Loaded :|");
     status = true;
-    objectDetector.detect(my_room, gotResult);
+    objectDetector.detect(my_pet, gotResult);
 }
 
 function gotResult(error, result){
@@ -32,7 +32,7 @@ function gotResult(error, result){
 }
 
 function draw(){
-    image(my_room, 0, 0, 500, 450);
+    image(my_pet, 0, 0, 500, 450);
 
     if(status != ""){
         for(i=0; i < objects.length; i++){
